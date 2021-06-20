@@ -1,0 +1,155 @@
+body {
+    font-family: "Lato", sans-serif;
+  }
+
+  /* width */
+.sidebar::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.sidebar::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+.sidebar::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  border-radius: 20px;
+}
+
+  .sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  #main {
+    transition: margin-left .1s;
+    margin-left: 250px;
+    
+  }
+  
+
+  .sidebar a{
+    color: white;
+    font-weight:500;
+  }
+  .nav-active{
+    margin: 5px !important;
+    background: #0275d8 !important;
+    color: white !important;
+  }
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+  }
+  /* @media only screen and (max-width: 600px) {
+    .footer-cred{
+      position: absolute;
+      bottom: 0px;
+      left:0px;
+      width: 100%;
+      margin:0px;
+      padding:5px;
+      box-shadow: 5px 10px 18px #888888;
+    }
+  } */
+
+.nav-item{
+  margin-bottom: 10px;
+}
+
+.nav-item-arrow{
+  position: absolute;
+  right: 20px;
+}
+
+
+
+.link-tree[aria-expanded="false"] .nav-item-arrow{
+  transition: 0.5s;
+}
+.link-tree[aria-expanded="true"] .nav-item-arrow{
+  transform: rotate(90deg);
+  transition: 0.5s;
+}
+
+.admin-logo{
+  width: 20%;
+  height: auto;
+}
+.admin-logo-navbar{
+  height: 50px;
+  width:auto;
+  margin-left:10px;
+}
+
+.navbar-brand{
+  display: flex;
+  align-items: center;
+}
+.navbar-brand a{
+  color: #0275d8!important;
+  text-decoration: none !important;
+}
+
+.nav-def{
+  position: fixed;
+  width: 100%;
+  box-shadow: 1px 1px 1px #d1d0d0;
+}
+
+.footer-cred{
+  position: relative;
+  bottom: 0px;
+  left:0px;
+  width: 250px;
+  margin:0px;
+  padding:5px;
+  border-top: 1px solid #f1f1f1;
+}
